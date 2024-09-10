@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="viewport" content="width = device-width",initial-scale=1.0>
+        <title>Mouse and keyboard Events</title>
+        <style>
+        body{
+            text-align: center;
+            margin-top: 50px;
+        }
+            
+        </style>
+</head>
+<body>
+    <h1> Mouse and keyword Events</h1>
+    <script>
+        //mouse event listener
+        document.addEventListener('mousemove',function(event){
+            //display mouse coordinator in the console
+            console.log(`Mouse Coordinates: X: ${event.clientX}, Y: ${event.clientY}`);
+        });
+        //keyword event listener 
+        document.addEventListener('keydown',function(event){
+            //Display the pressed key code in the console
+            console.log(`Key Pressed: ${event.key}, Key Code: ${event.keyCode}`);
+        });
+    </script>
+</body>
+</html>

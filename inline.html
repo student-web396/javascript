@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Greeting Project</h1>
+    <label for="nameInput">Enter your name:</label>
+    <input type="text" id="nameInput">
+    <button onclick="greetUser()">Greet Me!</button>
+    <p id="greetingMessage"></p>
+    <script>
+        function greetUser() {
+            var userName = document.getElementById('nameInput').value;
+            if (userName.trim() !== '') {
+                var greetingMessage = document.getElementById('greetingMessage');
+                greetingMessage.textContent = 'Hello, ' + userName + '! Welcome to our website.';
+            } else {
+                alert('Please enter your name before clicking on the "Greet Me!" button.');
+            }
+        }
+    </script>
+</body>
+</html>

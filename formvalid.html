@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Form Validation using a sample registration form</title>
+    <meta name="keywords" content="example, Javascript Form Validation, Sample registration form"/>
+    <meta name="description" content="This document is an example of Javascript Form Validation using a sample registration form." />
+    <link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+    <script src="smaple-registraion-form-validation.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+    <h1>Registration</h1>
+    Use tab keys to move from one field to the next.        
+    <form name='registration' onsubmit="return formvalidation();"></form>
+    <ul>
+        <li><label for="userid">User ID:</label></li>
+        <li><input type="text" name="userid" size="12"/></li>
+        <li><label for="passid">Password: </label></li>
+        <li><input type="password" name="passid" size="14"/></li>
+        <li><label for="username">Name:</label></li>
+        <li><input type="text" name="username" size="50"/></li>
+        <li><label for="address">Address</label></li>
+        <li><input type="text" name="address" size="50"/></li>
+        <li><label for="country">Country</label></li>
+        <li><select name="country">
+            <option value="AD">USA</option>
+            <option value="AD">USA</option>
+            <option value="AD">USA</option>
+            <option value="AD">USA</option>
+            <option value="AD">USA</option>
+            </select>
+        </li>
+        <li><label for="zip">Zip Code</label></li>
+        <li><input type="text" name="zip" /></li>
+        <li><label for="email">Email</label></li>
+        <li><input type="text" name="email" /></li>
+        <li><label for="Sex">Sex</label></li>
+        <li><input type="text" name="gender" /></li>
+
+        <li><input type="radio" name="fsex" value="female"/><span>Female</span></li>
+        <li><label>Language</label></li>
+        <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+        <li><input type="checkbox" name="nonen" value="noen"/><span>Non English</span></li>
+        
+    </ul>
+</body>
+</html>
